@@ -1,0 +1,1158 @@
+/*Google Font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.bg_cover {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.clr {
+    clear: both;
+}
+
+.custom-container {
+    padding: 0 70px;
+}
+
+:root {
+    --themeColor: #0f2f44;
+    --btn_color: linear-gradient(#ffe169, #ffa913);
+}
+
+/*ALL SECTION TITLE HERE*/
+.section_tile {
+    text-align: center;
+}
+
+.speahers_part .section_tile p {
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.speahers_part .section_tile h3 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section_tile p {
+    font-size: 20px;
+    color: var(--themeColor);
+    text-transform: capitalize;
+}
+
+.section_tile h3 {
+    font-size: 40px;
+    color: var(--themeColor);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*END OF COMMON CSS*/
+
+
+/*=============================
+    02.  HEADER CSS
+==============================*/
+.header_part {
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding: 30px 0;
+}
+
+.navbar-nav .nav-item .nav-link {}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: 500;
+    color: #fff;
+    transition: all .3s linear;
+}
+
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ffc107;
+}
+
+
+.navbar-nav .nav-item:first-child .nav-link {
+    margin-left: 55px;
+}
+
+.header_btn a {
+    font-size: 21px;
+    text-transform: uppercase;
+    background: var(--btn_color);
+    color: #0f2f44;
+    padding: 18px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-item > .submenu {
+    background: #6E06AE;
+    text-transform: capitalize;
+    width: 150px;
+    padding: 10px;
+    position: absolute;
+    top: 90px;
+    right: 50px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+}
+
+.navbar-nav .nav-item > .submenu li a {
+
+    font-size: 18px;
+    color: #fff;
+    transition: all .3s linear;
+}
+
+.navbar-nav .nav-item > .submenu li a:hover {
+    color: red;
+}
+
+.navbar-nav .nav-item > .submenu.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*=============================
+    02.  BANNER CSS
+==============================*/
+.banner_part {}
+
+.banner_overlay {
+    background: linear-gradient(to right, rgba(109, 13, 176, 0.6), rgb(65, 132, 208, 0.6));
+    width: 100%;
+    height: 100%;
+}
+
+.banner_text {
+    padding-top: 250px;
+    margin-bottom: 150px;
+}
+
+.banner_text p {
+    font-size: 40px;
+    letter-spacing: 20px;
+    color: #fff;
+}
+
+.banner_text h2 {
+    font-size: 80px;
+    padding: 0 170px;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+
+/*=============================
+        TIMER CSS
+==============================*/
+.timer {
+    padding-bottom: 50px;
+}
+
+.count-down-timer {
+    display: flex;
+    justify-content: end;
+    flex-flow: row wrap;
+    margin-right: 25px;
+}
+
+.count-down-timer > div {
+    min-height: 75px;
+    min-width: 75px;
+    margin-left: 4%;
+    display: flex;
+    /* flex-flow: column; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.count-down-timer h1 {
+    font-size: 80px;
+    background: var(--btn_color);
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.count-down-timer p {
+    font-size: 30px;
+    color: transparent;
+    background: var(--btn_color);
+    background-clip: text;
+    font-weight: 700;
+    transform: rotate(-90deg);
+}
+
+.days.active {
+    position: relative;
+}
+
+.days.active p {
+    position: absolute;
+    right: -30%;
+    top: 40%;
+}
+
+.hours.active {
+    position: relative;
+}
+
+.hours.active p {
+    position: absolute;
+    right: -30%;
+    top: 40%;
+}
+
+.minutes.active {
+    position: relative;
+}
+
+.minutes.active p {
+    position: absolute;
+    right: -50%;
+    top: 32%;
+}
+
+.seconds.active {
+    position: relative;
+}
+
+.seconds.active p {
+    position: absolute;
+    right: -55%;
+    top: 30%;
+}
+
+/*PLAY BUTTON CSS*/
+.play_btn {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.play_btn span {
+    font-size: 25px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.play_btn .fa {
+    font-size: 30px;
+    background: var(--btn_color);
+}
+
+.play_btn .fa {
+    font-size: 30px;
+    background: var(--btn_color);
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+}
+
+/*=============================
+     03. FESTIVAL CSS
+==============================*/
+
+.festival_part {
+    padding: 100px 0;
+    /*    position: relative;*/
+}
+
+.slide_dots_bg {
+    position: absolute;
+    top: -100px;
+    left: -35px;
+    z-index: -9;
+}
+
+.slide_dots_bg .dott {
+    height: 575px;
+}
+
+.fest_shape {
+    position: absolute;
+    top: 104px;
+    left: 220%;
+}
+
+
+/*FESTIVAL LEFT CSS*/
+.festival_slider {
+    position: relative;
+}
+
+.f_slider_active {
+    position: relative;
+}
+
+.img_one img {
+    display: inline-block;
+}
+
+.img_two img {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 9;
+}
+
+/*FESTIVAL RIGHT CSS*/
+.festival_date {
+    text-align: center;
+    margin-top: -33px;
+}
+
+.festival_date h3 {
+    font-size: 120px;
+    color: transparent;
+    background: url(../images/festivetextshape.png);
+    background-clip: text;
+    font-weight: 700;
+    background-position: 50%;
+}
+
+.festival_date span {
+    font-size: 25px;
+    color: #0f2f44;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.fest_right_text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.festival_text p {
+    font-size: 18px;
+}
+
+.p_two {
+    border-bottom: 1px solid;
+    padding-bottom: 30px;
+}
+
+.fest_address_wrap {
+    display: flex;
+    margin-top: 30px;
+}
+
+.fest_address {
+    display: flex;
+}
+
+.addres_text p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 12px;
+    color: #222;
+}
+
+.addres_text span {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #222;
+}
+
+
+/*=============================
+     03. SPEAKERS CSS
+==============================*/
+
+.single_speakers {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.speakers_text {
+    text-align: left;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: ; */
+    margin-top: -30px;
+}
+
+.speakers_text .date {
+    background: var(--themeColor);
+    text-align: center;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.speakers_text .schedule {
+    font-size: 20px;
+    background: var(--btn_color);
+    border-radius: 5px;
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+}
+
+.speakers_text h3 {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 500;
+    margin: 0;
+}
+
+.speakers_text span {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.speakers_social {
+    position: absolute;
+    bottom: 5px;
+    left: 125px;
+}
+
+.social_wrap {
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.social_wrap .follow {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+.social_wrap .line {
+    background: #f1f1f1;
+    width: 50px;
+    height: 2px;
+    margin: 0 10px;
+}
+
+.social_wrap .fa {
+    font-size: 16px;
+    margin-left: 20px;
+    color: #999999;
+    transition: all .3s linear;
+}
+
+.social_wrap .fa:hover {
+    color: #000;
+}
+
+
+/*=============================
+     04. EVENT CSS
+==============================*/
+.single_event {
+    display: flex;
+    border: 1px solid #f1f1f1;
+    padding: 10px;
+    transition: all .3s linear;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.event_img {
+    width: 13%;
+}
+
+.event_text h3 {
+    font-size: 32px;
+    color: var(--themeColor);
+    margin-top: 8px;
+    margin-bottom: 20px;
+    transition: all .3s linear;
+}
+
+.event_location {
+    display: flex;
+}
+
+.event_info {
+    display: flex;
+    width: 320px;
+    position: relative;
+}
+
+.event_info.one::before {
+    position: absolute;
+    content: '';
+    background: #f1f1f1;
+    width: 1px;
+    height: 52px;
+    display: inline-block;
+    top: 50%;
+    left: 87%;
+    transform: translateY(-50%);
+}
+
+.event_detail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.event_detail span {
+    font-size: 20px;
+    color: var(--themeColor);
+    transition: all .3s linear;
+    margin-top: -10px;
+}
+
+.event_button {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.event_button a {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--themeColor);
+    background: var(--btn_color);
+    padding: 15px 20px;
+    border-radius: 5%;
+    font-weight: 700;
+}
+
+.single_event:hover {
+    background: var(--themeColor);
+}
+
+.single_event:hover .event_text h3 {
+    color: #fff;
+}
+
+.single_event:hover .event_detail span {
+    color: #fff;
+}
+
+/*===================
+    SCROLLBAR CSS
+====================*/
+
+/* div box */
+
+
+.scrollbar {
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    overflow-y: scroll;
+}
+
+
+/*=============================
+     05. EVENT GALLERY CSS
+==============================*/
+.event_gall {
+    position: relative;
+}
+
+.gall_bg_one {
+    position: absolute;
+    top: 43px;
+    right: 0;
+}
+
+.gall_bg_one img {
+    width: 428px !important;
+    height: 675px;
+}
+
+.gal_bg_dot {
+    position: absolute;
+    top: 393px;
+    right: 110px;
+}
+
+.gallery_wrapper {
+    width: 100%
+}
+
+.single_gall {
+    width: 215px !important;
+    position: relative;
+    margin: 0 10px;
+}
+
+.single_gall .gall_overlay {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(110, 7, 174, 0.7), rgb(75, 119, 205, 0.7));
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+}
+
+.gall_overlay a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: #fff;
+}
+
+.single_gall:hover .gall_overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gall_btn {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.gall_btn a {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--themeColor);
+    background: var(--btn_color);
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+/*=============================
+     06. FEEDBACK CSS
+==============================*/
+.feedback_part {
+    position: relative;
+}
+
+.feedback_area {
+    border: 1px solid aliceblue;
+    padding: 50px 21px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: #fff;
+    margin: 10px 0;
+}
+
+.feedback_text p {
+    font-size: 26px;
+    line-height: 35px;
+    color: #444;
+    font-weight: 400;
+}
+
+.feedback_img {
+    position: relative;
+    display: flex;
+    justify-content: center !important;
+}
+
+.feedback_icon {
+    position: absolute;
+    top: 15%;
+    right: 14%;
+    background: #fff;
+    border-radius: 20px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 3px 0 12px 0 rgba(0, 0, 0, .1);
+}
+
+.feedback_icon .fa {
+    font-size: 20px;
+    color: #ffa913;
+    margin: 0 1px;
+    padding: 10px 0;
+}
+
+.feedback_info h2 {
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.feedback_info span {
+    font-size: 24px;
+    color: #999;
+    font-weight: 400;
+}
+
+.feedback_part .btn_left,
+.btn_right {
+    position: absolute;
+    background: var(--btn_color);
+    color: var(--themeColor);
+    top: 54%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    z-index: 999;
+}
+
+.feedback_part .btn_left {
+    left: 10px;
+}
+
+.feedback_part .btn_right {
+    right: 10px;
+}
+
+.feedback_bg {
+    position: absolute;
+    top: -127px;
+    z-index: -9;
+    left: -265px;
+}
+
+.feedback_dot {
+    position: absolute;
+    top: 87%;
+    left: 34%;
+}
+
+
+
+/*=============================
+     07. PRICING CSS
+==============================*/
+.row.prc_border {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.pricing_part {
+    position: relative;
+}
+
+.pricing_slider {
+    text-align: center;
+    position: relative;
+}
+
+/*
+.single_price {
+    margin: 20px;
+}
+*/
+
+.price_bg_one {
+    position: relative;
+}
+
+.price_bg_one span {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    top: 20px;
+    left: -20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+.price_bg_two {
+    background: #fff;
+    padding: 40px 0;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing_detail {}
+
+.pricing_detail h3 {
+    font-size: 32px;
+    color: var(--themeColor);
+    margin-bottom: 10px;
+}
+
+.pricing_detail h2 {
+    font-size: 60px;
+    font-weight: 700;
+    background: var(--btn_color);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 35px;
+}
+
+.pricing_detail ul {
+    padding: 0;
+    margin: 0;
+}
+
+.pricing_detail ul li {
+    font-size: 24px;
+    color: #444;
+    margin-top: 15px;
+}
+
+.shape_one {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.shape_two {
+    position: absolute;
+    display: inline-block;
+    top: -50px;
+    right: -50px;
+}
+
+.shape_three {
+    position: absolute;
+    display: inline-block;
+    left: -20px;
+    bottom: -20px;
+}
+
+.pricing_arrow .btn_left,
+.btn_right {
+    position: absolute;
+    background: var(--btn_color);
+    color: var(--themeColor);
+    top: 54%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.pricing_arrow .btn_left {
+    top: 50%;
+    margin-left: 10px;
+}
+
+.pricing_arrow .btn_left .fa {
+    transform: rotate(90deg);
+}
+
+.pricing_arrow .btn_right {
+    top: 60%;
+    margin-left: 10px;
+}
+
+.pricing_arrow .btn_right .fa {
+    transform: rotate(90deg);
+}
+
+/*PRICING INFO*/
+.pricing_info {
+    margin-left: 40px;
+}
+
+.pricing_info h2 {
+    font-size: 32px;
+    width: 50%;
+    display: inline-block;
+    font-weight: 700;
+    color: #ffa913;
+    margin-bottom: 30px;
+}
+
+.pricing_info input {
+    font-size: 20px;
+    color: #999;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.first_name {
+    width: 47%;
+}
+
+.last_name {
+    width: 48%;
+    margin-left: 25px;
+}
+
+.in_email {
+    width: 100%;
+}
+
+.in_phone {
+    width: 100%;
+}
+
+#plan {
+    width: 100%;
+    font-size: 20px;
+    color: #999;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+
+.payment_method {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.pay_text {
+    width: 50%;
+    text-align: left;
+}
+
+.pay_text h4 {
+    font-size: 24px;
+    color: #222;
+}
+
+.pay_images {
+    width: 50%;
+    text-align: right;
+}
+
+.payment_checkbox {
+    display: flex;
+    align-content: center;
+    margin-top: 50px;
+}
+
+.payment_checkbox input {
+    margin: 0;
+}
+
+.payment_checkbox p {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #444;
+    margin-left: 30px;
+}
+
+.payment_btn {
+    width: 100%;
+    display: inline-block;
+}
+
+.payment_btn {
+    width: 100%;
+    display: inline-block;
+    background: var(--btn_color);
+    border: 0;
+    margin-top: 25px;
+}
+
+.payment_btn a {
+    font-size: 24px;
+    color: var(--themeColor);
+    font-weight: 700;
+    padding: 15px;
+}
+
+
+/*=============================
+     08. SPONSORS CSS
+==============================*/
+
+.sponsors_brand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 55px;
+}
+
+.sponsors_brand img {
+    padding: 40px 20px;
+    border: 1px solid #eee;
+    margin: 5px;
+    border-radius: 5px;
+    /*    cursor: pointer;*/
+    transition: all .3s linear;
+}
+
+.sponsors_brand img:hover {
+    background: #eee;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+
+/*=============================
+     09. FOOTER CSS
+==============================*/
+
+.section_tile.footer_text p {
+    color: #ffa913;
+}
+
+.section_tile.footer_text h3 {
+    color: #fff;
+}
+
+.footer_info {
+    text-align: center;
+}
+
+.footer_email input {
+    width: 50%;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 20px 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 0;
+    position: relative;
+    color: #999;
+}
+
+.footer_btn {
+    position: absolute;
+    top: 0;
+    right: 25%;
+}
+
+.footer_btn a {
+    font-size: 24px;
+    color: #fff;
+    background: linear-gradient(90deg, #ffe169, #ffa913);
+    padding: 17px 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.footer_icon .fa {
+    margin: 5px;
+    font-size: 20px;
+    color: var(--themeColor);
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    transition: all .3s linear;
+
+}
+
+.footer_icon .fa:hover {
+    background: var(--btn_color);
+}
+
+.footer_menu ul {
+    margin: 0;
+}
+
+.footer_menu ul li {
+    display: inline-block;
+}
+
+.footer_menu ul li a {
+    font-size: 20px;
+    color: #fff;
+    margin: 0 18px;
+    transition: all .3s linear;
+}
+
+.footer_menu ul li a:hover {
+    color: #ffa913;
+}
+
+.footer_copyright {
+    border-top: 1px solid #1f3b4d;
+    padding-top: 30px;
+}
+
+.footer_copyright span {
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+/*=============================
+     0. SPEAKERS CSS
+==============================*/
