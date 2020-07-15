@@ -1,7 +1,8 @@
 $(function () {
 
     //    DROPDOWN MENU
-    $(".nav-link.active").click(function () {
+
+    $(".nav-link.active").on('click', function () {
         $(".submenu").toggleClass("active");
     });
 
@@ -30,11 +31,16 @@ $(function () {
 
     //    FESTIVAL SLIDE JS HERE
 
-        $('.f_slider_active').slick({
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1
-        });
+    $('.festival_left').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000
+
+    });
 
 
     //EVENT GALLERY SLICK JS
@@ -44,7 +50,42 @@ $(function () {
         slidesToScroll: 1,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 2000,
+        responsive: [
+
+            {
+                breakpoint: 993,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+            },
+
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+
+            {
+                breakpoint: 577,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+
+        ]
     });
 
     //    EVENT GALLERY VENOBOX
@@ -62,7 +103,28 @@ $(function () {
         autoplaySpeed: 2000,
         arrows: true,
         nextArrow: ".btn_right",
-        prevArrow: ".btn_left"
+        prevArrow: ".btn_left",
+        responsive: [
+
+            {
+                breakpoint: 577,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000
+                }
+            },
+
+        ]
     });
 
 
@@ -77,12 +139,7 @@ $(function () {
         prevArrow: ".pricing_arrow .btn_right",
         autoplay: true,
         autoplaySpeed: 2000
-
     });
-
-
-
-
 
 
 });

@@ -107,6 +107,10 @@ a:hover {
     z-index: 9;
 }
 
+.navbar {
+    padding: 0;
+}
+
 .navbar-nav {
     display: flex;
     justify-content: center;
@@ -115,16 +119,24 @@ a:hover {
     padding: 30px 0;
 }
 
-.navbar-nav .nav-item .nav-link {}
-
 .navbar-nav .nav-item .nav-link {
-    font-size: 20px;
-    margin-left: 20px;
+    font-size: 24px;
+    margin-left: 35px;
     font-weight: 500;
     color: #fff;
     transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+}
 
 .navbar-nav .nav-item .nav-link:hover {
     color: #ffc107;
@@ -132,45 +144,74 @@ a:hover {
 
 
 .navbar-nav .nav-item:first-child .nav-link {
-    margin-left: 55px;
+    margin-left: 60px;
+}
+
+.navbar-toggler {
+    color: #f1f1f1 !important;
+    border: 0;
+    font-size: 24px;
+    margin-left: auto;
+}
+
+.nav-item.header_btn {
+    margin-left: auto;
 }
 
 .header_btn a {
-    font-size: 21px;
+    font-size: 24px;
     text-transform: uppercase;
     background: var(--btn_color);
     color: #0f2f44;
-    padding: 18px 30px;
+    padding: 10px 30px;
     border-radius: 5px;
     font-weight: 700;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
-.navbar-nav .nav-item > .submenu {
+.navbar-nav .nav-item>.submenu {
     background: #6E06AE;
     text-transform: capitalize;
-    width: 150px;
+    width: 175px;
     padding: 10px;
     position: absolute;
-    top: 90px;
-    right: 50px;
+    top: 88%;
+    right: 20%;
     border-radius: 5px;
+    border: 1px solid rgba(77, 77, 77, 0.986);
+    transition: all .3s linear;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    padding-left: 20px;
     opacity: 0;
     visibility: hidden;
-    transition: all .3s linear;
 }
 
-.navbar-nav .nav-item > .submenu li a {
-
-    font-size: 18px;
+.navbar-nav .nav-item>.submenu li a {
+    font-size: 24px;
     color: #fff;
     transition: all .3s linear;
+    font-weight: 400;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
-.navbar-nav .nav-item > .submenu li a:hover {
-    color: red;
+.navbar-nav .nav-item>.submenu li a:hover {
+    color: #ffc107;
 }
 
-.navbar-nav .nav-item > .submenu.active {
+.navbar-nav .nav-item>.submenu.active {
     opacity: 1;
     visibility: visible;
 }
@@ -178,7 +219,6 @@ a:hover {
 /*=============================
     02.  BANNER CSS
 ==============================*/
-.banner_part {}
 
 .banner_overlay {
     background: linear-gradient(to right, rgba(109, 13, 176, 0.6), rgb(65, 132, 208, 0.6));
@@ -205,10 +245,10 @@ a:hover {
 }
 
 
-
 /*=============================
         TIMER CSS
 ==============================*/
+
 .timer {
     padding-bottom: 50px;
 }
@@ -220,12 +260,11 @@ a:hover {
     margin-right: 25px;
 }
 
-.count-down-timer > div {
+.count-down-timer>div {
     min-height: 75px;
     min-width: 75px;
     margin-left: 4%;
     display: flex;
-    /* flex-flow: column; */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -234,7 +273,7 @@ a:hover {
 .count-down-timer h1 {
     font-size: 80px;
     background: var(--btn_color);
-    background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     font-weight: 700;
     margin-bottom: 0;
@@ -244,9 +283,13 @@ a:hover {
     font-size: 30px;
     color: transparent;
     background: var(--btn_color);
-    background-clip: text;
+    -webkit-background-clip: text;
     font-weight: 700;
     transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
 }
 
 .days.active {
@@ -261,6 +304,7 @@ a:hover {
 
 .hours.active {
     position: relative;
+    margin-left: 7%;
 }
 
 .hours.active p {
@@ -271,6 +315,7 @@ a:hover {
 
 .minutes.active {
     position: relative;
+    margin-left: 7%;
 }
 
 .minutes.active p {
@@ -281,6 +326,7 @@ a:hover {
 
 .seconds.active {
     position: relative;
+    margin-left: 7%;
 }
 
 .seconds.active p {
@@ -289,7 +335,8 @@ a:hover {
     top: 30%;
 }
 
-/*PLAY BUTTON CSS*/
+/*************PLAY BUTTON CSS******/
+
 .play_btn {
     display: flex;
     align-items: center;
@@ -316,6 +363,10 @@ a:hover {
     border-radius: 50%;
     text-align: center;
     line-height: 80px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 /*=============================
@@ -324,7 +375,6 @@ a:hover {
 
 .festival_part {
     padding: 100px 0;
-    /*    position: relative;*/
 }
 
 .slide_dots_bg {
@@ -345,27 +395,74 @@ a:hover {
 }
 
 
-/*FESTIVAL LEFT CSS*/
-.festival_slider {
+/****************FESTIVAL LEFT CSS********************/
+
+.single_slider {
     position: relative;
 }
 
-.f_slider_active {
-    position: relative;
-}
-
-.img_one img {
-    display: inline-block;
-}
-
-.img_two img {
+.bg_one {
     position: absolute;
-    top: 50px;
-    left: 50px;
-    z-index: 9;
+    top: -100px;
+    width: 285px !important;
+    height: 580px !important;
+    left: -25px;
 }
 
-/*FESTIVAL RIGHT CSS*/
+.bg_two {
+    position: absolute;
+    right: 40px;
+    top: 0;
+}
+
+.f_two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 83%;
+}
+
+.f_one {
+    transform: translateY(0%);
+    margin-top: 50px;
+    margin-left: 50px;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    width: 83%;
+}
+
+.slick-dots {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.slick-dots li button {
+    border: 1px solid #999999;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    font-size: 0;
+    background: transparent;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+    background: var(--btn_color);
+    border: transparent;
+}
+
+/*************************** FESTIVAL RIGHT CSS ********************/
+
 .festival_date {
     text-align: center;
     margin-top: -33px;
@@ -375,7 +472,7 @@ a:hover {
     font-size: 120px;
     color: transparent;
     background: url(../images/festivetextshape.png);
-    background-clip: text;
+    -webkit-background-clip: text;
     font-weight: 700;
     background-position: 50%;
 }
@@ -441,7 +538,6 @@ a:hover {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
-    /* align-items: ; */
     margin-top: -30px;
 }
 
@@ -450,15 +546,23 @@ a:hover {
     text-align: center;
     border-radius: 5px;
     width: 150px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .speakers_text .schedule {
     font-size: 20px;
     background: var(--btn_color);
     border-radius: 5px;
-    background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     text-transform: uppercase;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .speakers_text h3 {
@@ -487,6 +591,10 @@ a:hover {
     padding: 5px;
     border-radius: 5px;
     align-items: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .social_wrap .follow {
@@ -508,24 +616,33 @@ a:hover {
     margin-left: 20px;
     color: #999999;
     transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
 .social_wrap .fa:hover {
     color: #000;
 }
 
-
 /*=============================
      04. EVENT CSS
 ==============================*/
+
 .single_event {
     display: flex;
+    flex-wrap: wrap;
     border: 1px solid #f1f1f1;
     padding: 10px;
     transition: all .3s linear;
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    position: relative;
 }
-
 
 .event_img {
     width: 13%;
@@ -537,6 +654,10 @@ a:hover {
     margin-top: 8px;
     margin-bottom: 20px;
     transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
 .event_location {
@@ -549,6 +670,10 @@ a:hover {
     position: relative;
 }
 
+.event_info.one {
+    margin-right: 20px;
+}
+
 .event_info.one::before {
     position: absolute;
     content: '';
@@ -557,8 +682,12 @@ a:hover {
     height: 52px;
     display: inline-block;
     top: 50%;
-    left: 87%;
+    left: 96%;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .event_detail {
@@ -572,12 +701,21 @@ a:hover {
     color: var(--themeColor);
     transition: all .3s linear;
     margin-top: -10px;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
 .event_button {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .event_button a {
@@ -586,8 +724,12 @@ a:hover {
     color: var(--themeColor);
     background: var(--btn_color);
     padding: 15px 20px;
-    border-radius: 5%;
+    border-radius: 5px;
     font-weight: 700;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .single_event:hover {
@@ -615,7 +757,6 @@ a:hover {
     background: #fff;
     overflow-y: scroll;
 }
-
 
 /*=============================
      05. EVENT GALLERY CSS
@@ -661,6 +802,10 @@ a:hover {
     opacity: 0;
     visibility: hidden;
     transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
 .gall_overlay a {
@@ -670,6 +815,10 @@ a:hover {
     transform: translate(-50%, -50%);
     font-size: 100px;
     color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .single_gall:hover .gall_overlay {
@@ -679,7 +828,10 @@ a:hover {
 
 .gall_btn {
     text-align: center;
-    margin-top: 40px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px !important;
+    z-index: 9;
 }
 
 .gall_btn a {
@@ -691,8 +843,11 @@ a:hover {
     padding: 15px 20px;
     border-radius: 5px;
     display: inline-block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
-
 
 /*=============================
      06. FEEDBACK CSS
@@ -732,6 +887,10 @@ a:hover {
     width: 150px;
     text-align: center;
     box-shadow: 3px 0 12px 0 rgba(0, 0, 0, .1);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .feedback_icon .fa {
@@ -764,7 +923,12 @@ a:hover {
     text-align: center;
     line-height: 70px;
     font-size: 30px;
+    cursor: pointer;
     z-index: 999;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .feedback_part .btn_left {
@@ -788,11 +952,10 @@ a:hover {
     left: 34%;
 }
 
-
-
 /*=============================
      07. PRICING CSS
 ==============================*/
+
 .row.prc_border {
     border-bottom: 1px solid #f1f1f1;
 }
@@ -803,42 +966,44 @@ a:hover {
 
 .pricing_slider {
     text-align: center;
-    position: relative;
+    margin-top: 55px;
 }
 
-/*
 .single_price {
-    margin: 20px;
-}
-*/
-
-.price_bg_one {
     position: relative;
+    margin: 20px;
 }
 
 .price_bg_one span {
-    position: absolute;
     background: #fff;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    top: 20px;
-    left: -20px;
+    width: 290px !important;
+    height: 538px;
     border-radius: 5px;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    display: flex;
+    margin-left: -10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .price_bg_two {
     background: #fff;
-    padding: 40px 0;
+    padding: 30px 0;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    width: 100%;
-    position: relative;
+    width: 94%;
     overflow: hidden;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
-
-.pricing_detail {}
 
 .pricing_detail h3 {
     font-size: 32px;
@@ -850,7 +1015,7 @@ a:hover {
     font-size: 60px;
     font-weight: 700;
     background: var(--btn_color);
-    background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     margin-bottom: 35px;
 }
@@ -863,28 +1028,29 @@ a:hover {
 .pricing_detail ul li {
     font-size: 24px;
     color: #444;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .shape_one {
     display: inline-block;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 2px;
+    left: 2px;
 }
 
 .shape_two {
     position: absolute;
     display: inline-block;
     top: -50px;
-    right: -50px;
+    right: -70px;
 }
 
 .shape_three {
     position: absolute;
     display: inline-block;
-    left: -20px;
-    bottom: -20px;
+    left: -4px;
+    bottom: 8px;
+    z-index: 9;
 }
 
 .pricing_arrow .btn_left,
@@ -901,27 +1067,40 @@ a:hover {
     font-size: 30px;
     z-index: 999;
     cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .pricing_arrow .btn_left {
-    top: 50%;
+    top: 42%;
     margin-left: 10px;
 }
 
 .pricing_arrow .btn_left .fa {
     transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
 }
 
 .pricing_arrow .btn_right {
-    top: 60%;
+    top: 53%;
     margin-left: 10px;
 }
 
 .pricing_arrow .btn_right .fa {
     transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
 }
 
 /*PRICING INFO*/
+
 .pricing_info {
     margin-left: 40px;
 }
@@ -943,6 +1122,10 @@ a:hover {
     border: 1px solid #ddd;
     margin-bottom: 20px;
     text-transform: capitalize;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .first_name {
@@ -971,8 +1154,11 @@ a:hover {
     border: 1px solid #ddd;
     margin-bottom: 20px;
     text-transform: capitalize;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
-
 
 .payment_method {
     display: flex;
@@ -998,18 +1184,19 @@ a:hover {
 .payment_checkbox {
     display: flex;
     align-content: center;
-    margin-top: 50px;
+    margin-top: 57px;
 }
 
 .payment_checkbox input {
     margin: 0;
+    margin-top: 7px;
 }
 
 .payment_checkbox p {
     font-size: 20px;
     text-transform: capitalize;
     color: #444;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .payment_btn {
@@ -1032,7 +1219,6 @@ a:hover {
     padding: 15px;
 }
 
-
 /*=============================
      08. SPONSORS CSS
 ==============================*/
@@ -1049,8 +1235,16 @@ a:hover {
     border: 1px solid #eee;
     margin: 5px;
     border-radius: 5px;
-    /*    cursor: pointer;*/
+    cursor: pointer;
     transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .sponsors_brand img:hover {
@@ -1058,7 +1252,6 @@ a:hover {
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 
 }
-
 
 /*=============================
      09. FOOTER CSS
@@ -1086,6 +1279,10 @@ a:hover {
     border: 0;
     position: relative;
     color: #999;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .footer_btn {
@@ -1102,6 +1299,10 @@ a:hover {
     font-weight: 700;
     text-transform: uppercase;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .footer_icon .fa {
@@ -1115,7 +1316,14 @@ a:hover {
     text-align: center;
     line-height: 60px;
     transition: all .3s linear;
-
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .footer_icon .fa:hover {
@@ -1150,9 +1358,3 @@ a:hover {
     color: #fff;
     font-size: 16px;
 }
-
-
-
-/*=============================
-     0. SPEAKERS CSS
-==============================*/

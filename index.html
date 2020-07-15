@@ -43,8 +43,10 @@
                         <img src="images/logo.png" alt="logo">
                     </a>
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -79,11 +81,14 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="nav-item header_btn">
+                            <a href="#">registration</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="header_btn ml-20">
+                <!-- <div class="header_btn ml-20">
                     <a href="#">registration</a>
-                </div>
+                </div> -->
             </div><!-- container -->
         </nav>
     </header>
@@ -95,7 +100,7 @@
         <div class="banner_overlay">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="banner_text text-center">
                             <p>Don’t Miss it</p>
                             <h2>World Biggest UI/UX Meetup V-1.0</h2>
@@ -103,7 +108,7 @@
                     </div>
                 </div><!-- row -->
                 <div class="row">
-                    <div class="col-lg-9">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-12">
                         <div class="timer">
                             <div class="count-down-timer">
                                 <div class="days active">
@@ -126,11 +131,12 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-12">
                         <div class="play_btn">
 
                             <span>Watch Full Video</span>
-                            <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/-Da8Mf5vg7o">
+                            <a class="venobox" data-autoplay="true" data-vbtype="video"
+                                href="https://youtu.be/-Da8Mf5vg7o">
                                 <i class="fa fa-play"></i>
                             </a>
                         </div>
@@ -146,40 +152,38 @@
     <section class="festival_part pt-100 pb-100">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
-                    <div class="festival_slider">
-                        <div class="slide_dots_bg">
-                            <img class="dott" src="images/festive_dot.png" alt="festive_dot">
-                            <img class="fest_shape" src="images/festive_shape.png" alt="festive_shape">
-                        </div>
-
-                        <div class="f_slider_active">
-
-                            <div class="slider_festival_img">
-                                <div class="img_one">
-                                    <img src="images/festive_img2.png" alt="festive_img2">
-                                </div>
-
-                                <div class="img_two">
-                                    <img src="images/festive_img1.png" alt="festive_img1">
-                                </div>
-                            </div>
-
-                            <div class="slider_festival_img">
-                                <div class="img_one">
-                                    <img src="images/festive_img2.png" alt="festive_img2">
-                                </div>
-
-                                <div class="img_two">
-                                    <img src="images/festive_img1.png" alt="festive_img1">
-                                </div>
-                            </div>
-
-                        </div>
+                <div class="col-lg-5 col-md-8 col-sm-12 col-12">
+                    <div class="festive_bg">
+                        <img class="bg_one" src="images/festive_dot.png" alt="festive_dot">
+                        <img class="bg_two" src="images/festive_shape.png" alt="festive_shape">
                     </div>
 
+                    <div class="festival_left">
+
+                        <div class="single_slider">
+                            <div class="f_slider_image">
+                                <img class="f_two" src="images/festive_img2.png" alt="festive_img2">
+                                <img class="f_one" src="images/festive_img1.png" alt="festive_img1">
+                            </div>
+                        </div>
+                        <div class="single_slider">
+                            <div class="f_slider_image">
+                                <img class="f_two" src="images/festive_img2.png" alt="festive_img2">
+                                <img class="f_one" src="images/festive_img1.png" alt="festive_img1">
+                            </div>
+                        </div>
+
+                        <div class="single_slider">
+                            <div class="f_slider_image">
+                                <img class="f_two" src="images/festive_img2.png" alt="festive_img2">
+                                <img class="f_one" src="images/festive_img1.png" alt="festive_img1">
+                            </div>
+                        </div>
+
+                    </div><!-- festival_left -->
+
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-4 col-sm-3 col-12">
                     <div class="festival_right">
 
                         <div class="festival_date">
@@ -190,15 +194,20 @@
 
                     </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5 col-md-12 col-sm-9 col-12">
                     <div class="festival_text">
                         <div class="fest_right_text">
                             <h2>Biggest UI/UX Festival
                                 <h2>in your country</h2>
                                 <h2>v:1.0</h2>
                             </h2>
-                            <p class="p_one pt-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p class="p_two">Duis aut e irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat n ulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim laborum. Sed ut perspiciatis unde omnis ist e natus error sit voluptatem accusantium doloremque laudantium, totam aperiam.</p>
+                            <p class="p_one pt-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostr ud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p class="p_two">Duis aut e irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat n ulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                                in culpa qui officia deserunt mollit anim laborum. Sed ut perspiciatis unde omnis ist e
+                                natus error sit voluptatem accusantium doloremque laudantium, totam aperiam.</p>
                         </div>
 
                         <div class="fest_address_wrap">
@@ -236,7 +245,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                     <!-- SECTION TITLE HERE -->
                     <div class="section_tile">
                         <p>Time Table & Speaking People</p>
@@ -245,8 +254,8 @@
                     <!-- SECTION TITLE HERE -->
                 </div>
 
-                <div class="col-lg-6">
-                    <div class="single_speakers pt-60">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="single_speakers resss pt-60">
                         <div class="speakers_img">
                             <img src="images/speaker-img1.png" alt="speaker-img1">
                         </div>
@@ -272,8 +281,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6">
-                    <div class="single_speakers pt-60">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="single_speakers res pt-60">
                         <div class="speakers_img">
                             <img src="images/speaker-img2.png" alt="speaker-img2">
                         </div>
@@ -299,8 +308,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6">
-                    <div class="single_speakers pt-60">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="single_speakers res pt-60">
                         <div class="speakers_img">
                             <img src="images/speaker-img3.png" alt="speaker-img3">
                         </div>
@@ -325,8 +334,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6">
-                    <div class="single_speakers pt-60">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="single_speakers res pt-60">
                         <div class="speakers_img">
                             <img src="images/speaker-img4.png" alt="speaker-img4">
                         </div>
@@ -351,8 +360,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6">
-                    <div class="single_speakers pt-60">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="single_speakers res pt-60">
                         <div class="speakers_img">
                             <img src="images/speaker-img5.png" alt="speaker-img5">
                         </div>
@@ -377,8 +386,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6">
-                    <div class="single_speakers pt-60">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="single_speakers res pt-60">
                         <div class="speakers_img">
                             <img src="images/speaker-img6.png" alt="speaker-img6">
                         </div>
@@ -403,8 +412,8 @@
                     </div>
                 </div>
 
-            </div>
-        </div>
+            </div><!-- row -->
+        </div><!-- container -->
     </section>
     <!--=== SPEAKERS PART END ===-->
 
@@ -413,7 +422,7 @@
     <section class="event_part pt-100 pb-100">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                     <!-- SECTION TITLE HERE -->
                     <div class="section_tile mb-70">
                         <p>fututure events</p>
@@ -423,7 +432,7 @@
                 </div>
             </div><!-- row -->
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
 
                     <div class="scrollbar">
 
@@ -442,125 +451,8 @@
                                         </div>
 
                                         <div class="event_detail">
-                                            <span>7382 Shirley Garden Avenue</span>
-                                            <span>North-South Ozone Park</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="event_info">
-                                        <div class="event_info_img">
-                                            <img src="images/event-phn.png" alt="event-phn">
-                                        </div>
-
-                                        <div class="event_detail">
-                                            <span>+009 522 582025</span>
-                                            <span>+009 522 014544</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="event_button">
-                                <a href="#">book your seat</a>
-                            </div>
-                        </div>
-                        <!-- single event here -->
-
-                        <!-- single event here -->
-                        <div class="single_event mb-30">
-                            <div class="event_img">
-                                <img src="images/event-img2.png" alt="event-img2" class="w-100">
-                            </div>
-                            <div class="event_text ml-30">
-                                <h3>Graphic Design Seminar for 3 Days</h3>
-                                <div class="event_location">
-
-                                    <div class="event_info one">
-                                        <div class="event_info_img">
-                                            <img src="images/event-location.png" alt="event-location">
-                                        </div>
-
-                                        <div class="event_detail">
-                                            <span>7382 Shirley Garden Avenue</span>
-                                            <span>North-South Ozone Park</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="event_info">
-                                        <div class="event_info_img">
-                                            <img src="images/event-phn.png" alt="event-phn">
-                                        </div>
-
-                                        <div class="event_detail">
-                                            <span>+009 522 582025</span>
-                                            <span>+009 522 014544</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="event_button">
-                                <a href="#">book your seat</a>
-                            </div>
-                        </div>
-                        <!-- single event here -->
-
-                        <!-- single event here -->
-                        <div class="single_event mb-30">
-                            <div class="event_img">
-                                <img src="images/event-img3.png" alt="event-img3" class="w-100">
-                            </div>
-                            <div class="event_text ml-30">
-                                <h3>laravel Framework Workshop (Day Long)</h3>
-                                <div class="event_location">
-
-                                    <div class="event_info one">
-                                        <div class="event_info_img">
-                                            <img src="images/event-location.png" alt="event-location">
-                                        </div>
-
-                                        <div class="event_detail">
-                                            <span>7382 Shirley Garden Avenue</span>
-                                            <span>North-South Ozone Park</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="event_info">
-                                        <div class="event_info_img">
-                                            <img src="images/event-phn.png" alt="event-phn">
-                                        </div>
-
-                                        <div class="event_detail">
-                                            <span>+009 522 582025</span>
-                                            <span>+009 522 014544</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="event_button">
-                                <a href="#">book your seat</a>
-                            </div>
-                        </div>
-                        <!-- single event here -->
-
-                        <!-- single event here -->
-                        <div class="single_event mb-30">
-                            <div class="event_img">
-                                <img src="images/event-img4.png" alt="event-img4" class="w-100">
-                            </div>
-                            <div class="event_text ml-30">
-                                <h3>UI/UX Bootcamp - 2020</h3>
-                                <div class="event_location">
-
-                                    <div class="event_info one">
-                                        <div class="event_info_img">
-                                            <img src="images/event-location.png" alt="event-location">
-                                        </div>
-
-                                        <div class="event_detail">
-                                            <span>7382 Shirley Garden Avenue</span>
-                                            <span>North-South Ozone Park</span>
+                                            <span>7382 Shirley Garden Avenue North-South Ozone Park</span>
+                                            <!-- <span>North-South Ozone Park</span> -->
                                         </div>
                                     </div>
 
@@ -598,125 +490,8 @@
                                         </div>
 
                                         <div class="event_detail">
-                                            <span>7382 Shirley Garden Avenue</span>
-                                            <span>North-South Ozone Park</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="event_info">
-                                        <div class="event_info_img">
-                                            <img src="images/event-phn.png" alt="event-phn">
-                                        </div>
-
-                                        <div class="event_detail">
-                                            <span>+009 522 582025</span>
-                                            <span>+009 522 014544</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="event_button">
-                                <a href="#">book your seat</a>
-                            </div>
-                        </div>
-                        <!-- single event here -->
-
-                        <!-- single event here -->
-                        <div class="single_event mb-30">
-                            <div class="event_img">
-                                <img src="images/event-img2.png" alt="event-img2" class="w-100">
-                            </div>
-                            <div class="event_text ml-30">
-                                <h3>Graphic Design Seminar for 3 Days</h3>
-                                <div class="event_location">
-
-                                    <div class="event_info one">
-                                        <div class="event_info_img">
-                                            <img src="images/event-location.png" alt="event-location">
-                                        </div>
-
-                                        <div class="event_detail">
-                                            <span>7382 Shirley Garden Avenue</span>
-                                            <span>North-South Ozone Park</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="event_info">
-                                        <div class="event_info_img">
-                                            <img src="images/event-phn.png" alt="event-phn">
-                                        </div>
-
-                                        <div class="event_detail">
-                                            <span>+009 522 582025</span>
-                                            <span>+009 522 014544</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="event_button">
-                                <a href="#">book your seat</a>
-                            </div>
-                        </div>
-                        <!-- single event here -->
-
-                        <!-- single event here -->
-                        <div class="single_event mb-30">
-                            <div class="event_img">
-                                <img src="images/event-img3.png" alt="event-img3" class="w-100">
-                            </div>
-                            <div class="event_text ml-30">
-                                <h3>laravel Framework Workshop (Day Long)</h3>
-                                <div class="event_location">
-
-                                    <div class="event_info one">
-                                        <div class="event_info_img">
-                                            <img src="images/event-location.png" alt="event-location">
-                                        </div>
-
-                                        <div class="event_detail">
-                                            <span>7382 Shirley Garden Avenue</span>
-                                            <span>North-South Ozone Park</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="event_info">
-                                        <div class="event_info_img">
-                                            <img src="images/event-phn.png" alt="event-phn">
-                                        </div>
-
-                                        <div class="event_detail">
-                                            <span>+009 522 582025</span>
-                                            <span>+009 522 014544</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="event_button">
-                                <a href="#">book your seat</a>
-                            </div>
-                        </div>
-                        <!-- single event here -->
-
-                        <!-- single event here -->
-                        <div class="single_event mb-30">
-                            <div class="event_img">
-                                <img src="images/event-img4.png" alt="event-img4" class="w-100">
-                            </div>
-                            <div class="event_text ml-30">
-                                <h3>UI/UX Bootcamp - 2020</h3>
-                                <div class="event_location">
-
-                                    <div class="event_info one">
-                                        <div class="event_info_img">
-                                            <img src="images/event-location.png" alt="event-location">
-                                        </div>
-
-                                        <div class="event_detail">
-                                            <span>7382 Shirley Garden Avenue</span>
-                                            <span>North-South Ozone Park</span>
+                                            <span>7382 Shirley Garden Avenue North-South Ozone Park</span>
+                                            <!-- <span>North-South Ozone Park</span> -->
                                         </div>
                                     </div>
 
@@ -754,8 +529,8 @@
                                         </div>
 
                                         <div class="event_detail">
-                                            <span>7382 Shirley Garden Avenue</span>
-                                            <span>North-South Ozone Park</span>
+                                            <span>7382 Shirley Garden Avenue North-South Ozone Park</span>
+                                            <!-- <span>North-South Ozone Park</span> -->
                                         </div>
                                     </div>
 
@@ -781,10 +556,10 @@
                         <!-- single event here -->
                         <div class="single_event mb-30">
                             <div class="event_img">
-                                <img src="images/event-img2.png" alt="event-img2" class="w-100">
+                                <img src="images/event-img1.png" alt="event-img1" class="w-100">
                             </div>
                             <div class="event_text ml-30">
-                                <h3>Graphic Design Seminar for 3 Days</h3>
+                                <h3>Wordpress Day Long Bootcamp</h3>
                                 <div class="event_location">
 
                                     <div class="event_info one">
@@ -793,8 +568,8 @@
                                         </div>
 
                                         <div class="event_detail">
-                                            <span>7382 Shirley Garden Avenue</span>
-                                            <span>North-South Ozone Park</span>
+                                            <span>7382 Shirley Garden Avenue North-South Ozone Park</span>
+                                            <!-- <span>North-South Ozone Park</span> -->
                                         </div>
                                     </div>
 
@@ -820,10 +595,10 @@
                         <!-- single event here -->
                         <div class="single_event mb-30">
                             <div class="event_img">
-                                <img src="images/event-img3.png" alt="event-img3" class="w-100">
+                                <img src="images/event-img1.png" alt="event-img1" class="w-100">
                             </div>
                             <div class="event_text ml-30">
-                                <h3>laravel Framework Workshop (Day Long)</h3>
+                                <h3>Wordpress Day Long Bootcamp</h3>
                                 <div class="event_location">
 
                                     <div class="event_info one">
@@ -832,8 +607,8 @@
                                         </div>
 
                                         <div class="event_detail">
-                                            <span>7382 Shirley Garden Avenue</span>
-                                            <span>North-South Ozone Park</span>
+                                            <span>7382 Shirley Garden Avenue North-South Ozone Park</span>
+                                            <!-- <span>North-South Ozone Park</span> -->
                                         </div>
                                     </div>
 
@@ -859,10 +634,10 @@
                         <!-- single event here -->
                         <div class="single_event mb-30">
                             <div class="event_img">
-                                <img src="images/event-img4.png" alt="event-img4" class="w-100">
+                                <img src="images/event-img1.png" alt="event-img1" class="w-100">
                             </div>
                             <div class="event_text ml-30">
-                                <h3>UI/UX Bootcamp - 2020</h3>
+                                <h3>Wordpress Day Long Bootcamp</h3>
                                 <div class="event_location">
 
                                     <div class="event_info one">
@@ -871,8 +646,86 @@
                                         </div>
 
                                         <div class="event_detail">
-                                            <span>7382 Shirley Garden Avenue</span>
-                                            <span>North-South Ozone Park</span>
+                                            <span>7382 Shirley Garden Avenue North-South Ozone Park</span>
+                                            <!-- <span>North-South Ozone Park</span> -->
+                                        </div>
+                                    </div>
+
+                                    <div class="event_info">
+                                        <div class="event_info_img">
+                                            <img src="images/event-phn.png" alt="event-phn">
+                                        </div>
+
+                                        <div class="event_detail">
+                                            <span>+009 522 582025</span>
+                                            <span>+009 522 014544</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="event_button">
+                                <a href="#">book your seat</a>
+                            </div>
+                        </div>
+                        <!-- single event here -->
+
+                        <!-- single event here -->
+                        <div class="single_event mb-30">
+                            <div class="event_img">
+                                <img src="images/event-img1.png" alt="event-img1" class="w-100">
+                            </div>
+                            <div class="event_text ml-30">
+                                <h3>Wordpress Day Long Bootcamp</h3>
+                                <div class="event_location">
+
+                                    <div class="event_info one">
+                                        <div class="event_info_img">
+                                            <img src="images/event-location.png" alt="event-location">
+                                        </div>
+
+                                        <div class="event_detail">
+                                            <span>7382 Shirley Garden Avenue North-South Ozone Park</span>
+                                            <!-- <span>North-South Ozone Park</span> -->
+                                        </div>
+                                    </div>
+
+                                    <div class="event_info">
+                                        <div class="event_info_img">
+                                            <img src="images/event-phn.png" alt="event-phn">
+                                        </div>
+
+                                        <div class="event_detail">
+                                            <span>+009 522 582025</span>
+                                            <span>+009 522 014544</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="event_button">
+                                <a href="#">book your seat</a>
+                            </div>
+                        </div>
+                        <!-- single event here -->
+
+                        <!-- single event here -->
+                        <div class="single_event mb-30">
+                            <div class="event_img">
+                                <img src="images/event-img1.png" alt="event-img1" class="w-100">
+                            </div>
+                            <div class="event_text ml-30">
+                                <h3>Wordpress Day Long Bootcamp</h3>
+                                <div class="event_location">
+
+                                    <div class="event_info one">
+                                        <div class="event_info_img">
+                                            <img src="images/event-location.png" alt="event-location">
+                                        </div>
+
+                                        <div class="event_detail">
+                                            <span>7382 Shirley Garden Avenue North-South Ozone Park</span>
+                                            <!-- <span>North-South Ozone Park</span> -->
                                         </div>
                                     </div>
 
@@ -907,7 +760,7 @@
     <section class="event_gall">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                     <!-- SECTION TITLE HERE -->
                     <div class="section_tile mb-60">
                         <p>photos of event</p>
@@ -917,108 +770,110 @@
                 </div>
             </div><!-- row -->
         </div><!-- container -->
+        <div class="row mx-0">
+            <!-- EVENT GALLERY BACKGROUND IMAGE HERE -->
+            <div class="gall_bg_one">
+                <img src="images/gall-shape1.png" alt="gall-shape1">
+            </div>
+            <div class="gal_bg_dot">
+                <img src="images/gall-shape-dots.png" alt="gall-shape-dots">
+            </div>
+            <!-- EVENT GALLERY BACKGROUND IMAGE HERE -->
 
-        <!-- EVENT GALLERY BACKGROUND IMAGE HERE -->
-        <div class="gall_bg_one">
-            <img src="images/gall-shape1.png" alt="gall-shape1">
+            <div class="gallery_wrapper">
+
+                <div class="single_gall">
+                    <img src="images/gallery-img1.png" alt="gallery-img1" class="w-100">
+                    <div class="gall_overlay">
+                        <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img1.png">+</a>
+                    </div>
+                </div>
+
+                <div class="single_gall">
+                    <img src="images/gallery-img2.png" alt="gallery-img2" class="w-100">
+                    <div class="gall_overlay">
+                        <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img2.png">+</a>
+                    </div>
+                </div>
+
+                <div class="single_gall">
+                    <img src="images/gallery-img3.png" alt="gallery-img3" class="w-100">
+                    <div class="gall_overlay">
+                        <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img3.png">+</a>
+                    </div>
+                </div>
+
+                <div class="single_gall">
+                    <img src="images/gallery-img4.png" alt="gallery-img4" class="w-100">
+                    <div class="gall_overlay">
+                        <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img4.png">+</a>
+                    </div>
+                </div>
+
+                <div class="single_gall">
+                    <img src="images/gallery-img5.png" alt="gallery-img5" class="w-100">
+                    <div class="gall_overlay">
+                        <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img5.png">+</a>
+                    </div>
+                </div>
+
+                <div class="single_gall">
+                    <img src="images/gallery-img6.png" alt="gallery-img6" class="w-100">
+                    <div class="gall_overlay">
+                        <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img6.png">+</a>
+                    </div>
+                </div>
+
+                <div class="single_gall">
+                    <img src="images/gallery-img7.png" alt="gallery-img7" class="w-100">
+                    <div class="gall_overlay">
+                        <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img7.png">+</a>
+                    </div>
+                </div>
+
+                <div class="single_gall">
+                    <img src="images/gallery-img8.png" alt="gallery-img8" class="w-100">
+                    <div class="gall_overlay">
+                        <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img8.png">+</a>
+                    </div>
+                </div>
+
+                <div class="single_gall">
+                    <img src="images/gallery-img9.png" alt="gallery-img9" class="w-100">
+                    <div class="gall_overlay">
+                        <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img9.png">+</a>
+                    </div>
+                </div>
+
+                <div class="single_gall">
+                    <img src="images/gallery-img10.png" alt="gallery-img10" class="w-100">
+                    <div class="gall_overlay">
+                        <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img10.png">+</a>
+                    </div>
+                </div>
+
+                <div class="single_gall">
+                    <img src="images/gallery-img11.png" alt="gallery-img11" class="w-100">
+                    <div class="gall_overlay">
+                        <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img11.png">+</a>
+                    </div>
+                </div>
+
+                <div class="single_gall">
+                    <img src="images/gallery-img12.png" alt="gallery-img12" class="w-100">
+                    <div class="gall_overlay">
+                        <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img12.png">+</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="gall_btn">
+                <a href="#">see more</a>
+            </div>
         </div>
-        <div class="gal_bg_dot">
-            <img src="images/gall-shape-dots.png" alt="gall-shape-dots">
-        </div>
-        <!-- EVENT GALLERY BACKGROUND IMAGE HERE -->
 
-        <div class="gallery_wrapper">
-
-            <div class="single_gall">
-                <img src="images/gallery-img1.png" alt="gallery-img1" class="w-100">
-                <div class="gall_overlay">
-                    <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img1.png">+</a>
-                </div>
-            </div>
-
-            <div class="single_gall">
-                <img src="images/gallery-img2.png" alt="gallery-img2" class="w-100">
-                <div class="gall_overlay">
-                    <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img2.png">+</a>
-                </div>
-            </div>
-
-            <div class="single_gall">
-                <img src="images/gallery-img3.png" alt="gallery-img3" class="w-100">
-                <div class="gall_overlay">
-                    <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img3.png">+</a>
-                </div>
-            </div>
-
-            <div class="single_gall">
-                <img src="images/gallery-img4.png" alt="gallery-img4" class="w-100">
-                <div class="gall_overlay">
-                    <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img4.png">+</a>
-                </div>
-            </div>
-
-            <div class="single_gall">
-                <img src="images/gallery-img5.png" alt="gallery-img5" class="w-100">
-                <div class="gall_overlay">
-                    <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img5.png">+</a>
-                </div>
-            </div>
-
-            <div class="single_gall">
-                <img src="images/gallery-img6.png" alt="gallery-img6" class="w-100">
-                <div class="gall_overlay">
-                    <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img6.png">+</a>
-                </div>
-            </div>
-
-            <div class="single_gall">
-                <img src="images/gallery-img7.png" alt="gallery-img7" class="w-100">
-                <div class="gall_overlay">
-                    <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img7.png">+</a>
-                </div>
-            </div>
-
-            <div class="single_gall">
-                <img src="images/gallery-img8.png" alt="gallery-img8" class="w-100">
-                <div class="gall_overlay">
-                    <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img8.png">+</a>
-                </div>
-            </div>
-
-            <div class="single_gall">
-                <img src="images/gallery-img9.png" alt="gallery-img9" class="w-100">
-                <div class="gall_overlay">
-                    <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img9.png">+</a>
-                </div>
-            </div>
-
-            <div class="single_gall">
-                <img src="images/gallery-img10.png" alt="gallery-img10" class="w-100">
-                <div class="gall_overlay">
-                    <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img10.png">+</a>
-                </div>
-            </div>
-
-            <div class="single_gall">
-                <img src="images/gallery-img11.png" alt="gallery-img11" class="w-100">
-                <div class="gall_overlay">
-                    <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img11.png">+</a>
-                </div>
-            </div>
-
-            <div class="single_gall">
-                <img src="images/gallery-img12.png" alt="gallery-img12" class="w-100">
-                <div class="gall_overlay">
-                    <a class="venobox_gall" data-gall="gallery01" href="images/gallery-img12.png">+</a>
-                </div>
-            </div>
-
-
-
-        </div>
-        <div class="gall_btn">
-            <a href="#">see more</a>
-        </div>
     </section>
     <!--=== EVENT GALLERY PART END ===-->
 
@@ -1027,7 +882,7 @@
     <section class="feedback_part pt-100 pb-100">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                     <!-- SECTION TITLE HERE -->
                     <div class="section_tile mb-60">
                         <p>positive reviews</p>
@@ -1039,11 +894,13 @@
             <div class="row feedback_slider">
 
                 <!-- single fedback -->
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="feedback_area">
                         <div class="single_feedback">
                             <div class="feedback_text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dosmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dosmod tempor
+                                    incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco.</p>
                             </div>
                             <div class="feedback_img mt-30">
                                 <img src="images/feedback-img1.png" alt="feedback-img1">
@@ -1065,11 +922,13 @@
                 <!-- single fedback -->
 
                 <!-- single fedback -->
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="feedback_area">
                         <div class="single_feedback">
                             <div class="feedback_text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dosmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dosmod tempor
+                                    incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco.</p>
                             </div>
                             <div class="feedback_img mt-30">
                                 <img src="images/feedback-img2.png" alt="feedback-img2">
@@ -1091,11 +950,13 @@
                 <!-- single fedback -->
 
                 <!-- single fedback -->
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="feedback_area">
                         <div class="single_feedback">
                             <div class="feedback_text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dosmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dosmod tempor
+                                    incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco.</p>
                             </div>
                             <div class="feedback_img mt-30">
                                 <img src="images/feedback-img1.png" alt="feedback-img1">
@@ -1151,7 +1012,7 @@
     <section class="pricing_part">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                     <!-- SECTION TITLE HERE -->
                     <div class="section_tile">
                         <p>entry pass</p>
@@ -1161,8 +1022,8 @@
                 </div>
             </div><!-- row -->
             <div class="row prc_border">
-                <div class="col-lg-4">
-                    <div class="pricing_slider pt-55 pb-55">
+                <div class="col-lg-4 col-md-5 col-sm-12 col-12">
+                    <div class="pricing_slider">
 
                         <div class="single_price">
                             <!--SINGLE SLIDE-->
@@ -1197,7 +1058,7 @@
                             <!--SINGLE SLIDE-->
                         </div>
 
-                        <div class="single_price two">
+                        <div class="single_price">
                             <!--SINGLE SLIDE-->
                             <div class="price_bg_one">
                                 <span></span>
@@ -1230,10 +1091,9 @@
                             <!--SINGLE SLIDE-->
                         </div>
 
-
                     </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-8 col-md-7 col-sm-12 col-12">
                     <div class="pricing_info pt-55 pb-55">
                         <h2>Giving your informations & Getting the Ticket</h2>
                         <form action="#">
@@ -1287,7 +1147,7 @@
     <section class="sponsors_part pt-100 pb-100">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                     <!-- SECTION TITLE HERE -->
                     <div class="section_tile">
                         <p>supporters</p>
@@ -1295,7 +1155,7 @@
                     </div>
                     <!-- SECTION TITLE HERE -->
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="sponsors_brand">
                         <img src="images/brand-img1.png" alt="brand-img1">
                         <img src="images/brand-img2.png" alt="brand-img2">
@@ -1318,7 +1178,7 @@
     <footer class="footer_part bg_cover pt-35 pb-35" style="background: url(images/footer-bg.png)">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                     <!-- SECTION TITLE HERE -->
                     <div class="section_tile footer_text mb-30">
                         <p>get updated</p>
@@ -1328,7 +1188,7 @@
                 </div>
             </div><!-- row -->
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="footer_info">
 
                         <div class="footer_email">
@@ -1361,8 +1221,10 @@
                 </div>
             </div><!-- row -->
         </div><!-- container -->
-        <div class="footer_copyright text-center">
-            <span>© Copyright 2020. All rights reserved by Designer</span>
+        <div class="row mx-0 justify-content-center w-100">
+            <div class="footer_copyright text-center w-100">
+                <span>© Copyright 2020. All rights reserved by Designer</span>
+            </div>
         </div>
     </footer>
     <!--=== FOOTER PART END ===-->
