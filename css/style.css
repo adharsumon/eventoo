@@ -255,9 +255,10 @@ a:hover {
 
 .count-down-timer {
     display: flex;
-    justify-content: end;
-    flex-flow: row wrap;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     margin-right: 25px;
+    flex-direction: row;
 }
 
 .count-down-timer>div {
@@ -1343,6 +1344,10 @@ a:hover {
     color: #fff;
     margin: 0 18px;
     transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
 .footer_menu ul li a:hover {
